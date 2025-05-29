@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: gray;
-            margin: 0;
+        *{
+            margin:0;
             padding:0;
-            height:100vh;
+            box-sizing:border-box;
+            height: auto;
+            font-size:16px;
         }
 
         .card{
-         background-color: #9a5858;
+         background-color: rgb(234, 162, 162);
             border-radius: 10px;
-            padding: 50 px;
+            padding: 40px;
             width: 90%;
-            max-width: 300px;
+            max-width: 200px;
             height: auto;
             margin: auto;
             display:flex;
             justify-content: column;
-            align-items: center;  
+            align-items: auto;  
             gap: 20px;      
         }
 
@@ -35,15 +35,16 @@
         }
 
         h2{
-            color: red;
+            color: black;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
     
         input{
             width: 100px;
-            margin-bottom: 15px;
-            padding:5px;
+            height: auto;
+            margin-bottom: 10px;
+            padding:3px;
             align-items: center;
         }
 
@@ -52,14 +53,14 @@
             color:#fff;
             padding: 10 px;
             width: 5 px;
-            height: 10 px;
+            height: auto;
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="card">
     <h2>SIGN UP</h2>
+    <div class="card">
     <form>       
         <input type="text" name="First Name" id="First Name" placeholder="First Name">
         <input type="text" name="Last Name" id="Last Name" placeholder="Last Name">
