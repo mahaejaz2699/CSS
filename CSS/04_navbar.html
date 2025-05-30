@@ -110,6 +110,53 @@
             border: 1px solid white;
         }
 
+        .nav3 {
+            background-color: rgb(41, 120, 93);
+        }
+
+        .nav3 ul{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav3 a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display:block;
+        }
+
+        .nav3 .dropdown-content{
+            display:none;
+        }
+
+        .nav3 .dropdown:hover .dropdown-content{
+            display:block;
+            position:absolute;
+            background-color: aqua;
+            min-width: 150px;
+            color:#000000;
+        }
+
+        .nav3 .login-btn{
+            background-color: #0a65c7;
+            border:none;
+            color:#fff;
+            width:100%;
+            padding:5px;
+            margin:5px;
+            border-radius: 5px;
+            margin-left:8px;
+        }
+
+        .nav3 .login-btn:hover{
+            background-color: #0aa817;
+            border:1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -142,10 +189,17 @@
         <nav class="nav3">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                  <a href="#">About</a>
+                  <div class="dropdown-content">
+                    <a href="#">Our Story</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact</a>
+                  </div>   
+                </li>
                 <li><a href="#">Products</a></li>
-            </ul>
             <li><button class="login-btn">Login</a></li>
+            </ul>
         </nav>
     </div>
 </body>
