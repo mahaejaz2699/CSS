@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: rgb(102, 102, 251);
+            flex-direction:row;
+            width:100%;
+            margin:0;
+            padding:0;
+            border:2px solid black;
+        }
+
+        .flex-container > div{
+            background-color: #f1f1f1;
+            width:100px;
+            margin:10px;
+            text-align:75px;
+            font-size:30px; 
+            border-radius: 2px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of flex</h1>
+    <h2>Default Flex (row)</h2>
+    <div class="flex-container" >
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+
+    <h2>Default Flex (column)</h2>
+    <div class="flex-container" style="flex-direction: column-reverse;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Space between</h2>
+    <div class="flex-container" style="justify-content: space-between;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Align Items center</h2>
+    <div class="flex-container" style="align-items: center;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Flex Wrap</h2>
+    <div class="flex-container" style="flex-wrap: wrap;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Flex Wrap with space around</h2>
+    <div class="flex-container" style="flex-wrap: wrap; align-content:space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>Order</h2>
+    <div class="flex-container" style="flex-grow: 5;">
+        <div style="order: 1;">1</div>
+        <div style="order: 2;">2</div>
+        <div style="order: 3;">3</div>
+        <div style="order: 4;">4</div>
+        <div style="order: 5;">5</div>
+        <div style="order: 1;">6</div>
+        <div style="order: 1;">7</div>
+        <div style="order: 1;">8</div>
+        <div style="order: 1;">9</div>
+        <div style="order: 1;">10</div>
+    </div>  
+
+    <h2>Flex Grow</h2>
+    <div class="flex-container" style="flex-grow: 5;">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 2;">2</div>
+        <div style="flex-grow: 3;">3</div>
+        <div style="flex-grow: 6;">4</div>
+        <div style="flex-grow: 1;">5</div>
+        <div style="flex-grow: 1;">6</div>
+        <div style="flex-grow: 1;">7</div>
+        <div style="flex-grow: 1;">8</div>
+        <div style="flex-grow: 1;">9</div>
+        <div style="flex-grow: 1;">10</div>
+    </div>    
+
+    <h2>Align Self</h2>
+    <div class="flex-container">
+        <div style="align-self: flex-end;">1</div>
+        <div style="align-self: flex-start;">2</div>
+        <div style="align-self: center;">4</div>
+        <div style="align-self: flex-end;">4</div>
+        <div style="align-self: stretch;">5</div>
+    </div> 
+</body>
+</html>
