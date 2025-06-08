@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-purple-800: oklch(43.8% 0.218 303.724);
+    --color-pink-800: oklch(45.9% 0.187 3.815);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -187,6 +188,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-pink-800 {
+    color: var(--color-pink-800);
   }
   .text-purple-800 {
     color: var(--color-purple-800);
